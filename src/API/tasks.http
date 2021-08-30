@@ -1,0 +1,31 @@
+# PLUGIN REST Client
+# los tres ### significa que creo una peticion nueva. 
+
+GET http://localhost:3000/tasks
+###
+# Para enviar un post con datos necesito agregar una cabecera
+# Una cabecera es informacion extra que necesito enviar a la peticion
+# ENTRE EL CONTENT-TYPE y el json debe ir un espacio
+
+POST  http://localhost:3000/tasks
+Content-Type: application/json
+
+{
+    "name": "Tarea 1202001",
+    "description" : "description 1"
+}
+###
+GET http://localhost:3000/tasks/SXkPWaWmp0IPtMq48qP7C
+###
+
+DELETE http://localhost:3000/tasks/AQbc1buehood0t8FNc-Oj
+###
+
+PUT  http://localhost:3000/tasks/sfMSiqLcnFkAZUUp1BzZK
+Content-Type: application/json
+
+{
+    "description" : "PP rompe"
+}
+###
+GET http://localhost:3000/tasks/count
